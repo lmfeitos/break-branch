@@ -38,7 +38,8 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ```{r break-it-1}
 ggplot(data = diamonds, aes(x = table, y = price)) +
   geom_line() +
-  theme_dark()
+  theme_dark() +
+  labs(title = "kat graph")
 ```
 
 ```{r break-it-2}
