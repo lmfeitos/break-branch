@@ -39,11 +39,16 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ggplot(data = diamonds, aes(x = table, y = price)) +
   geom_line() +
   theme_dark() +
-  labs(title = "kat graph"
+  labs(title = "kat graph")
 ```
 
 ```{r break-it-2}
-
+diamonds_carat <- diamonds %>% 
+  select(carat, cut, depth, color)
+ggplot(diamonds_carat, aes(x = cut, y = depth)) +
+  geom_violin(fill = "cyan4") +
+  theme_bw() +
+  theme(panel.grid = element_blank())
 ```
 
 ## END Discussion 3
