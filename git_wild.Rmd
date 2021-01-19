@@ -36,14 +36,10 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
-# Create subset of diamonds
-diamond_cut <- diamonds %>% 
-  filter(cut != "fair")
-ggplot(data = diamond_cut, aes(x = depth, y = carat)) +
-  geom_boxplot(aes(fill = cut)) +
-  labs(x = "Depth",
-       y = "Carat") +
-  theme_classic()
+ggplot(data = diamonds, aes(x = table, y = price)) +
+  geom_line() +
+  theme_dark() +
+  labs(title = "kat graph"
 ```
 
 ```{r break-it-2}
