@@ -16,9 +16,9 @@ library(tidyverse)
 # Change the code below to make the point color change based on 'cut', and update the theme to theme_bw(). Update the title to include your first name. 
 
 ggplot(data = diamonds, aes(x = carat, y = price)) +
-  geom_point() +
-  theme_void() +
-  labs(title = "YOURNAME was here")
+  geom_point(aes(color = cut)) +
+  theme_bw() +
+  labs(title = "Leonardo was here")
 ```
 
 ```{r partner_2a}
@@ -39,7 +39,7 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ggplot(data = diamonds, aes(x = table, y = price)) +
   geom_line() +
   theme_dark() +
-  labs(title = "kat graph")
+  labs(title = "kat graph"
 ```
 
 ```{r break-it-2}
